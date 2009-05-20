@@ -1,0 +1,8 @@
+## Interface: 30000
+## Title: Soul Pouch
+## Author: Kring
+## Notes: Whenever all bags are opend, the soul pouch is kept closed.
+## SavedVariables:
+## OptionalDeps:
+## Dependencies:
+SoulPouch.xml

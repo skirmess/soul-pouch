@@ -1,0 +1,40 @@
+
+SoulPouch_Version = 6
+
+function SoulPouch_IsSoulPouch(bag)
+
+	local bagName = GetBagName(bag)
+
+	if ( bagName ~= nil ) then
+		if (
+			bagName == SoulPouch_Constants.SOULPOUCH or
+			bagName == SoulPouch_Constants.FELCLOTHBAG or
+			bagName == SoulPouch_Constants.COREFELCLOTHBAG
+		) then
+			return true
+		end
+	end
+
+	return false
+end
+
+function SoulPouch_CloseSoulPouch()
+	
+	for i = 0, 4 do
+		if ( SoulPouch_IsSoulPouch(i) ) then
+			CloseBag(i)
+		end
+	end
+end
+
+function SoulPouch_OnLoad()
+
+	local myClass = UnitClass("player")
+
+	if (myClass == SoulPouch_Constants.WARLOCK) then
+	        hooksecurefunc("OpenAllBags", SoulPouch_CloseSoulPouch)
+
+		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, SoulPouch_Version))
+	end
+end
+

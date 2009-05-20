@@ -22,6 +22,13 @@ SoulPouch_localization.deDE = {
 }
 
 SoulPouch_localization.frFR = {
+	SOULPOUCH				= 'Bourse d\'âme';
+	FELCLOTHBAG				= 'Sac en gangrétoffe';
+	COREFELCLOTHBAG				= 'Sac en gangrétoffe du Magma';
+
+	WARLOCK					= 'Démoniste';
+
+	SOUL_POUCH_LOADED			= "Soul Pouch %s chargé.";
 }
 
 SoulPouch_localization.koKR = {

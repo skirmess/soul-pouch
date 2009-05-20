@@ -17,6 +17,10 @@ all.
 
 *** Changelog
 
+Version 3
+Added french translation
+Updated TOC for WoW Client 1.10
+
 Version 2
 Added german translation for the Core Felcloth Bag
 Fixed a bug where sometimes the main bag was kept open

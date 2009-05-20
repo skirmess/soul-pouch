@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 20300
 ## Title: Soul Pouch
 ## Author: Kring
 ## Notes: Whenever all bags are opend, the soul pouch is kept closed.

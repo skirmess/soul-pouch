@@ -2,33 +2,33 @@
 SoulPouch_localization = {}
 
 SoulPouch_localization.enUS = {
-	SOULPOUCH				= 'Soul Pouch';
-	FELCLOTHBAG				= 'Felcloth Bag';
-	COREFELCLOTHBAG				= 'Core Felcloth Bag';
+	SOULPOUCH				= 'Soul Pouch',
+	FELCLOTHBAG				= 'Felcloth Bag',
+	COREFELCLOTHBAG				= 'Core Felcloth Bag',
 
-	WARLOCK					= 'Warlock';
+	WARLOCK					= 'Warlock',
 
-	SOUL_POUCH_LOADED			= "Soul Pouch %s loaded.";
+	SOUL_POUCH_LOADED			= "Soul Pouch %s loaded.",
 }
 
 SoulPouch_localization.deDE = {
-	SOULPOUCH				= 'Seelenbeutel';
-	FELCLOTHBAG				= 'Teufelsstofftasche';
-	COREFELCLOTHBAG				= 'Kernteufelsstofftasche';
+	SOULPOUCH				= 'Seelenbeutel',
+	FELCLOTHBAG				= 'Teufelsstofftasche',
+	COREFELCLOTHBAG				= 'Kernteufelsstofftasche',
 
-	WARLOCK					= 'Hexenmeister';
+	WARLOCK					= 'Hexenmeister',
 
-	SOUL_POUCH_LOADED			= "Soul Pouch %s geladen.";
+	SOUL_POUCH_LOADED			= "Soul Pouch %s geladen.",
 }
 
 SoulPouch_localization.frFR = {
-	SOULPOUCH				= 'Bourse d\'âme';
-	FELCLOTHBAG				= 'Sac en gangrétoffe';
-	COREFELCLOTHBAG				= 'Sac en gangrétoffe du Magma';
+	SOULPOUCH				= 'Bourse d\'âme',
+	FELCLOTHBAG				= 'Sac en gangrétoffe',
+	COREFELCLOTHBAG				= 'Sac en gangrétoffe du Magma',
 
-	WARLOCK					= 'Démoniste';
+	WARLOCK					= 'Démoniste',
 
-	SOUL_POUCH_LOADED			= "Soul Pouch %s chargé.";
+	SOUL_POUCH_LOADED			= "Soul Pouch %s chargé.",
 }
 
 SoulPouch_localization.koKR = {

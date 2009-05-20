@@ -17,6 +17,10 @@ all.
 
 *** Changelog
 
+Version 4
+Does now work with the bank and mailbox too.
+Updated TOC for WoW Client 1.12
+
 Version 3
 Added french translation
 Updated TOC for WoW Client 1.10

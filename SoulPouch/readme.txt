@@ -17,6 +17,9 @@ all.
 
 *** Changelog
 
+Version 5
+Updated TOC for WoW Client 2.0
+
 Version 4
 Does now work with the bank and mailbox too.
 Updated TOC for WoW Client 1.12

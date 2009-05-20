@@ -17,6 +17,10 @@ all.
 
 *** Changelog
 
+Version 6
+Added 'Small Soul Pouch', 'Box of Souls' and 'Ebon Shadowbag
+Updated TOC for WoW Client 2.0.3
+
 Version 5
 Updated TOC for WoW Client 2.0
 

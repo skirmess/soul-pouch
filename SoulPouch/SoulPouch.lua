@@ -1,5 +1,5 @@
 
-SoulPouch_Version = 5
+SoulPouch_Version = 6
 
 function SoulPouch_IsSoulPouch(bag)
 
@@ -7,9 +7,12 @@ function SoulPouch_IsSoulPouch(bag)
 
 	if ( bagName ~= nil ) then
 		if (
+			bagName == SoulPouch_Constants.EBONSHADOWBAG or
 			bagName == SoulPouch_Constants.SOULPOUCH or
 			bagName == SoulPouch_Constants.FELCLOTHBAG or
-			bagName == SoulPouch_Constants.COREFELCLOTHBAG
+			bagName == SoulPouch_Constants.COREFELCLOTHBAG or
+			bagName == SoulPouch_Constants.BOXOFSOULS or
+			bagName == SoulPouch_Constants.SMALLSOULPOUCH
 		) then
 			return true
 		end
@@ -55,7 +58,8 @@ function SoulPouch_OnLoad()
 
 	local myClass = UnitClass("player")
 
-	if (myClass == SoulPouch_Constants.WARLOCK) then
+	if ((myClass == SoulPouch_Constants.WARLOCK) and
+	    (SoulPouchOrig_OpenAllBags == nil)) then
 		SoulPouchOrig_OpenAllBags = OpenAllBags
 		OpenAllBags = SoulPouch_OpenAll
 		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, SoulPouch_Version))

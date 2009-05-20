@@ -1,4 +1,6 @@
 
+SoulPouch_Version = 2;
+
 function SoulPouch_IsSoulPouch(bag)
 
 	local bagName = GetBagName(bag);
@@ -25,7 +27,7 @@ function SoulPouch_OpenAllNonSoulPouchBags()
 	end
 end
 
-function SoulPouch_OpenAll()
+function SoulPouch_OpenAll(forceOpen)
 	-- Check if we should actually close all bags
 
 	local allBagsAreOpen = true;
@@ -34,14 +36,15 @@ function SoulPouch_OpenAll()
 			if (not IsBagOpen(i)) then
 				-- At least on bag is closed.
 				allBagsAreOpen = false;
-				break;
 			end
 		end
+
+		-- Version 1 used CloseAllBags() which seams to be buggy.
+		-- Sometimes it did not close bag #0.
+		CloseBag(i);
 	end
 
-	CloseAllBags();
-
-	if (not allBagsAreOpen) then
+	if (forceOpen or not allBagsAreOpen) then
 		SoulPouch_OpenAllNonSoulPouchBags();
 	end
 end
@@ -52,7 +55,7 @@ function SoulPouch_OnLoad()
 
 	if (myClass == SoulPouch_Constants.WARLOCK) then
 		OpenAllBags = SoulPouch_OpenAll;
-		DEFAULT_CHAT_FRAME:AddMessage("Soul Pouch loaded.");
+		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, SoulPouch_Version));
 	end
 end
 

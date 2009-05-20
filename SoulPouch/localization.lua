@@ -7,14 +7,18 @@ SoulPouch_localization.enUS = {
 	COREFELCLOTHBAG				= 'Core Felcloth Bag';
 
 	WARLOCK					= 'Warlock';
+
+	SOUL_POUCH_LOADED			= "Soul Pouch %s loaded.";
 }
 
 SoulPouch_localization.deDE = {
 	SOULPOUCH				= 'Seelenbeutel';
 	FELCLOTHBAG				= 'Teufelsstofftasche';
-	COREFELCLOTHBAG				= 'Core Felcloth Bag';
+	COREFELCLOTHBAG				= 'Kernteufelsstofftasche';
 
 	WARLOCK					= 'Hexenmeister';
+
+	SOUL_POUCH_LOADED			= "Soul Pouch %s geladen.";
 }
 
 SoulPouch_localization.frFR = {
@@ -24,3 +28,4 @@ SoulPouch_localization.koKR = {
 }
 
 SoulPouch_Constants = SoulPouch_localization[GetLocale()]
+

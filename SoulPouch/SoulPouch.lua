@@ -1,5 +1,5 @@
 
-SoulPouch_Version = 7
+SoulPouch_Version = 8
 
 function SoulPouch_IsSoulPouch(bag)
 
@@ -7,6 +7,7 @@ function SoulPouch_IsSoulPouch(bag)
 
 	if ( bagName ~= nil ) then
 		if (
+			bagName == SoulPouch_Constants.ABYSSALBAG or
 			bagName == SoulPouch_Constants.EBONSHADOWBAG or
 			bagName == SoulPouch_Constants.SOULPOUCH or
 			bagName == SoulPouch_Constants.FELCLOTHBAG or

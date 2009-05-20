@@ -17,6 +17,11 @@ all.
 
 *** Changelog
 
+Version 8
+Updated TOC for WoW 3.0.2
+Added 'Abyssal Bag' from WotLK.
+	(German and French translation for this bag name missing.)
+
 Version 7
 Updated TOC for WoW Client 2.3.0
 

@@ -1,4 +1,4 @@
-## Interface: 30000
+## Interface: 30100
 ## Title: Soul Pouch
 ## Author: Kring
 ## Notes: Whenever all bags are opend, the soul pouch is kept closed.

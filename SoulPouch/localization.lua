@@ -8,7 +8,7 @@ SoulPouch_localization.enUS = {
 	FELCLOTHBAG				= 'Felcloth Bag',
 	COREFELCLOTHBAG				= 'Core Felcloth Bag',
 	EBONSHADOWBAG				= 'Ebon Shadowbag',
-	ABYSSALBAG				= 'Abyssal Bag',
+	ABYSSALBAG				= 'Abgr\195\188ndige Tasche',
 
 	WARLOCK					= 'Warlock',
 

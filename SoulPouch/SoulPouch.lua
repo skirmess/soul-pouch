@@ -1,5 +1,5 @@
 
-SoulPouch_Version = 9
+SoulPouch_Version = 10
 
 function SoulPouch_IsSoulPouch(bag)
 

@@ -8,7 +8,7 @@ SoulPouch_localization.enUS = {
 	FELCLOTHBAG				= 'Felcloth Bag',
 	COREFELCLOTHBAG				= 'Core Felcloth Bag',
 	EBONSHADOWBAG				= 'Ebon Shadowbag',
-	ABYSSALBAG				= 'Abgr\195\188ndige Tasche',
+	ABYSSALBAG				= 'Abyssal Bag',
 
 	WARLOCK					= 'Warlock',
 
@@ -22,7 +22,7 @@ SoulPouch_localization.deDE = {
 	FELCLOTHBAG				= 'Teufelsstofftasche',
 	COREFELCLOTHBAG				= 'Kernteufelsstofftasche',
 	EBONSHADOWBAG				= 'Schwarzschattentasche',
-	ABYSSALBAG				= 'Abyssal Bag',
+	ABYSSALBAG				= 'Abgr\195\188ndige Tasche',
 
 	WARLOCK					= 'Hexenmeister',
 

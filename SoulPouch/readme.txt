@@ -17,6 +17,9 @@ all.
 
 *** Changelog
 
+Version 10
+Bugfix: Replaced the german and english name for 'Abyssal Bag' in version 9.
+
 Version 9
 Updated TOC for WoW 3.1.2
 Added german name for 'Abyssal Bag'.

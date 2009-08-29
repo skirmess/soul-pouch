@@ -17,42 +17,45 @@ all.
 
 *** Changelog
 
+version 11
+ * Updated TOC for WoW 3.2
+ * Added license information
+ * Added link to project main page at
+   http://code.google.com/p/soul-pouch/
+
 Version 10
-Bugfix: Replaced the german and english name for 'Abyssal Bag' in version 9.
+ * Bugfix: Replaced the german and english name for 'Abyssal Bag' in version 9.
 
 Version 9
-Updated TOC for WoW 3.1.2
-Added german name for 'Abyssal Bag'.
+ * Updated TOC for WoW 3.1.2
+ * Added german name for 'Abyssal Bag'.
 
 Version 8
-Updated TOC for WoW 3.0.2
-Added 'Abyssal Bag' from WotLK.
-	(German and French translation for this bag name missing.)
+ * Updated TOC for WoW 3.0.2
+ * Added 'Abyssal Bag' from WotLK.
+   (German and French translation for this bag name missing.)
 
 Version 7
-Updated TOC for WoW Client 2.3.0
+ * Updated TOC for WoW Client 2.3.0
 
 Version 6
-Added 'Small Soul Pouch', 'Box of Souls' and 'Ebon Shadowbag
-Updated TOC for WoW Client 2.0.3
+ * Added 'Small Soul Pouch', 'Box of Souls' and 'Ebon Shadowbag
+ * Updated TOC for WoW Client 2.0.3
 
 Version 5
-Updated TOC for WoW Client 2.0
+ * Updated TOC for WoW Client 2.0
 
 Version 4
-Does now work with the bank and mailbox too.
-Updated TOC for WoW Client 1.12
+ * Does now work with the bank and mailbox too.
+ * Updated TOC for WoW Client 1.12
 
 Version 3
-Added french translation
-Updated TOC for WoW Client 1.10
+ * Added french translation
+ * Updated TOC for WoW Client 1.10
 
 Version 2
-Added german translation for the Core Felcloth Bag
-Fixed a bug where sometimes the main bag was kept open
-Added support for the flag to OpenAll() which forces to open all bags,
-  no mather if all the bags were already open (which would imply to
-  close them). This also keeps the Soul Pouch closed.
-
-Version 1
-Initial release
+ * Added german translation for the Core Felcloth Bag
+ * Fixed a bug where sometimes the main bag was kept open
+ * Added support for the flag to OpenAll() which forces to open all bags,
+   no mather if all the bags were already open (which would imply to
+   close them). This also keeps the Soul Pouch closed.

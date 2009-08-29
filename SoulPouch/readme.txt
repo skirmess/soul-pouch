@@ -18,6 +18,10 @@ all.
 *** Changelog
 
 version 11
+ * Use GetItemInfo() to check if the bag is a soul pouch. Therefore we
+   don't have to maintain a list of all soul pouches in this add-on.
+   And it will automatically work in every language, no need to translate
+   all the bag names.
  * Updated TOC for WoW 3.2
  * Added license information
  * Added link to project main page at

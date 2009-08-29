@@ -1,29 +1,29 @@
 
-SoulPouch_Version = 10
+-- Copyright (c) 2009, Sven Kirmess
+
+SoulPouch_Version = 11
 
 function SoulPouch_IsSoulPouch(bag)
 
-	local bagName = GetBagName(bag)
+	-- We only care about the 4 player bags and not about
+	-- bank bags, the backpack or wrong input to this function.
+	if ( bag < 1 or bag > 4 ) then
+		return false
+	end
 
-	if ( bagName ~= nil ) then
-		if (
-			bagName == SoulPouch_Constants.ABYSSALBAG or
-			bagName == SoulPouch_Constants.EBONSHADOWBAG or
-			bagName == SoulPouch_Constants.SOULPOUCH or
-			bagName == SoulPouch_Constants.FELCLOTHBAG or
-			bagName == SoulPouch_Constants.COREFELCLOTHBAG or
-			bagName == SoulPouch_Constants.BOXOFSOULS or
-			bagName == SoulPouch_Constants.SMALLSOULPOUCH
-		) then
-			return true
-		end
+	local invID = ContainerIDToInventoryID(bag)
+	local bagLink = GetInventoryItemLink("player", invID)
+	local itemSubType, trash
+	trash, trash, trash, trash, trash, trash, itemSubType, trash, trash, trash = GetItemInfo(bagLink)
+	if ( itemSubType == SoulPouch_Constants.SOULBAG ) then
+		return true
 	end
 
 	return false
 end
 
 function SoulPouch_OpenAllNonSoulPouchBags()
-	
+
 	SoulPouchOrig_OpenAllBags()
 
 	for i = 0, 4 do

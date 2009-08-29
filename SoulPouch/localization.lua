@@ -1,14 +1,10 @@
 
+-- Copyright (c) 2009, Sven Kirmess
+
 SoulPouch_localization = {}
 
 SoulPouch_localization.enUS = {
-	SMALLSOULPOUCH				= 'Small Soul Pouch',
-	BOXOFSOULS				= 'Box of Souls',
-	SOULPOUCH				= 'Soul Pouch',
-	FELCLOTHBAG				= 'Felcloth Bag',
-	COREFELCLOTHBAG				= 'Core Felcloth Bag',
-	EBONSHADOWBAG				= 'Ebon Shadowbag',
-	ABYSSALBAG				= 'Abyssal Bag',
+	SOULBAG					= 'Soul Bag',
 
 	WARLOCK					= 'Warlock',
 
@@ -16,13 +12,7 @@ SoulPouch_localization.enUS = {
 }
 
 SoulPouch_localization.deDE = {
-	SMALLSOULPOUCH				= 'Kleiner Seelenbeutel',
-	BOXOFSOULS				= 'Seelenkasten',
-	SOULPOUCH				= 'Seelenbeutel',
-	FELCLOTHBAG				= 'Teufelsstofftasche',
-	COREFELCLOTHBAG				= 'Kernteufelsstofftasche',
-	EBONSHADOWBAG				= 'Schwarzschattentasche',
-	ABYSSALBAG				= 'Abgr\195\188ndige Tasche',
+	SOULBAG					= 'Soul Bag',
 
 	WARLOCK					= 'Hexenmeister',
 
@@ -30,17 +20,11 @@ SoulPouch_localization.deDE = {
 }
 
 SoulPouch_localization.frFR = {
-	SMALLSOULPOUCH				= 'Petite bourse d\'âme',
-	BOXOFSOULS				= 'Boîte d\'âmes',
-	SOULPOUCH				= 'Bourse d\'âme',
-	FELCLOTHBAG				= 'Sac en gangrétoffe',
-	COREFELCLOTHBAG				= 'Sac en gangrétoffe du Magma',
-	EBONSHADOWBAG				= 'Ombresac d\'ébène',
-	ABYSSALBAG				= 'Abyssal Bag',
+	SOULBAG					= 'Soul Bag',
 
-	WARLOCK					= 'Démoniste',
+	WARLOCK					= 'DȨmoniste',
 
-	SOUL_POUCH_LOADED			= "Soul Pouch %s chargé.",
+	SOUL_POUCH_LOADED			= "Soul Pouch %s chargȨ.",
 }
 
 SoulPouch_localization.koKR = {

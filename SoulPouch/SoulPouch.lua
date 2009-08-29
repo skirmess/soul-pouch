@@ -13,8 +13,7 @@ function SoulPouch_IsSoulPouch(bag)
 
 	local invID = ContainerIDToInventoryID(bag)
 	local bagLink = GetInventoryItemLink("player", invID)
-	local itemSubType, trash
-	trash, trash, trash, trash, trash, trash, itemSubType, trash, trash, trash = GetItemInfo(bagLink)
+	local itemSubType = select(7, GetItemInfo(bagLink))
 	if ( itemSubType == SoulPouch_Constants.SOULBAG ) then
 		return true
 	end

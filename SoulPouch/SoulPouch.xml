@@ -6,7 +6,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 	<Frame name="SoulPouch">
 		<Scripts>
 			<OnLoad>
-				SoulPouch_OnLoad();
+				SoulPouch_OnLoad()
 			</OnLoad>
 		</Scripts>
 	</Frame>

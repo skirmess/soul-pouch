@@ -33,8 +33,8 @@ local function OpenAllNonSoulPouchBags()
 end
 
 local function SoulPouch_OpenAll(forceOpen)
-	-- Check if we should actually close all bags
 
+	-- Check if we should actually close all bags
 	local allBagsAreOpen = true
 	for i = 0, 4 do
 		if ( not IsSoulPouch(i) ) then

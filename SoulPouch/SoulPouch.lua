@@ -1,7 +1,7 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-SoulPouch_Version = 11
+SoulPouch_Version = 12
 
 function SoulPouch_IsSoulPouch(bag)
 
@@ -56,9 +56,9 @@ end
 
 function SoulPouch_OnLoad()
 
-	local myClass = UnitClass("player")
+	local _, myClass = UnitClass("player")
 
-	if ((myClass == SoulPouch_Constants.WARLOCK) and
+	if ((myClass == "WARLOCK") and
 	    (SoulPouchOrig_OpenAllBags == nil)) then
 		SoulPouchOrig_OpenAllBags = OpenAllBags
 		OpenAllBags = SoulPouch_OpenAll

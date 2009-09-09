@@ -17,6 +17,9 @@ all.
 
 *** Changelog
 
+Version 12
+ * The class needs no longer be localized.
+
 version 11
  * Use GetItemInfo() to check if the bag is a soul pouch. Therefore we
    don't have to maintain a list of all soul pouches in this add-on.

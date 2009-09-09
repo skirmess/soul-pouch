@@ -1,9 +1,9 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-SoulPouch_Version = 12
+local SoulPouch_Version = 12
 
-function SoulPouch_IsSoulPouch(bag)
+local function IsSoulPouch(bag)
 
 	-- We only care about the 4 player bags and not about
 	-- bank bags, the backpack or wrong input to this function.
@@ -21,23 +21,23 @@ function SoulPouch_IsSoulPouch(bag)
 	return false
 end
 
-function SoulPouch_OpenAllNonSoulPouchBags()
+local function OpenAllNonSoulPouchBags()
 
 	SoulPouchOrig_OpenAllBags()
 
 	for i = 0, 4 do
-		if ( SoulPouch_IsSoulPouch(i) ) then
+		if ( IsSoulPouch(i) ) then
 			CloseBag(i)
 		end
 	end
 end
 
-function SoulPouch_OpenAll(forceOpen)
+local function SoulPouch_OpenAll(forceOpen)
 	-- Check if we should actually close all bags
 
 	local allBagsAreOpen = true
 	for i = 0, 4 do
-		if ( not SoulPouch_IsSoulPouch(i) ) then
+		if ( not IsSoulPouch(i) ) then
 			if ( not IsBagOpen(i) ) then
 				-- At least on bag is closed.
 				allBagsAreOpen = false
@@ -50,7 +50,7 @@ function SoulPouch_OpenAll(forceOpen)
 	end
 
 	if ( forceOpen or not allBagsAreOpen ) then
-		SoulPouch_OpenAllNonSoulPouchBags()
+		OpenAllNonSoulPouchBags()
 	end
 end
 

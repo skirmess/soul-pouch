@@ -19,6 +19,7 @@ all.
 
 Version 12
  * The class needs no longer be localized.
+ * We no longer leak globals.
 
 Version 11
  * Use GetItemInfo() to check if the bag is a soul pouch. Therefore we

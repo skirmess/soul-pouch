@@ -1,7 +1,7 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-SoulPouch_localization = {}
+SoulPouch_localization = { }
 
 SoulPouch_localization.enUS = {
 	SOULBAG					= 'Soul Bag',

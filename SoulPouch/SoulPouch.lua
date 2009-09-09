@@ -1,7 +1,8 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-local SoulPouch_Version = 12
+local Version = 12
+local OrigOpenAllBags = nil
 
 local function IsSoulPouch(bag)
 
@@ -23,7 +24,7 @@ end
 
 local function OpenAllNonSoulPouchBags()
 
-	SoulPouchOrig_OpenAllBags()
+	OrigOpenAllBags()
 
 	for i = 0, 4 do
 		if ( IsSoulPouch(i) ) then
@@ -32,10 +33,11 @@ local function OpenAllNonSoulPouchBags()
 	end
 end
 
-local function SoulPouch_OpenAll(forceOpen)
+local function NewOpenAllBags(forceOpen)
 
 	-- Check if we should actually close all bags
 	local allBagsAreOpen = true
+	local i
 	for i = 0, 4 do
 		if ( not IsSoulPouch(i) ) then
 			if ( not IsBagOpen(i) ) then
@@ -59,10 +61,10 @@ function SoulPouch_OnLoad()
 	local _, myClass = UnitClass("player")
 
 	if ( ( myClass == "WARLOCK" ) and
-	     ( SoulPouchOrig_OpenAllBags == nil ) ) then
-		SoulPouchOrig_OpenAllBags = OpenAllBags
-		OpenAllBags = SoulPouch_OpenAll
-		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, SoulPouch_Version))
+	     ( OrigOpenAllBags == nil ) ) then
+		OrigOpenAllBags = OpenAllBags
+		OpenAllBags = NewOpenAllBags
+		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, Version))
 	end
 end
 

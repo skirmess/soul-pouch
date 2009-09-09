@@ -6,4 +6,5 @@
 ## OptionalDeps:
 ## Dependencies:
 ## X-Website: http://code.google.com/p/soul-pouch/
+localization.lua
 SoulPouch.lua

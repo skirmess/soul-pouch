@@ -38,7 +38,7 @@ function SoulPouch_OpenAll(forceOpen)
 	local allBagsAreOpen = true
 	for i = 0, 4 do
 		if ( not SoulPouch_IsSoulPouch(i) ) then
-			if (not IsBagOpen(i)) then
+			if ( not IsBagOpen(i) ) then
 				-- At least on bag is closed.
 				allBagsAreOpen = false
 			end
@@ -49,7 +49,7 @@ function SoulPouch_OpenAll(forceOpen)
 		CloseBag(i)
 	end
 
-	if (forceOpen or not allBagsAreOpen) then
+	if ( forceOpen or not allBagsAreOpen ) then
 		SoulPouch_OpenAllNonSoulPouchBags()
 	end
 end
@@ -58,8 +58,8 @@ function SoulPouch_OnLoad()
 
 	local _, myClass = UnitClass("player")
 
-	if ((myClass == "WARLOCK") and
-	    (SoulPouchOrig_OpenAllBags == nil)) then
+	if ( ( myClass == "WARLOCK" ) and
+	     ( SoulPouchOrig_OpenAllBags == nil ) ) then
 		SoulPouchOrig_OpenAllBags = OpenAllBags
 		OpenAllBags = SoulPouch_OpenAll
 		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, SoulPouch_Version))

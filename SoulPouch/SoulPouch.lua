@@ -56,15 +56,24 @@ local function NewOpenAllBags(forceOpen)
 	end
 end
 
-function SoulPouch_OnLoad()
+local function EventHandler(self, event, ...)
 
-	local _, myClass = UnitClass("player")
+	if ( event == "PLAYER_ENTERING_WORLD" ) then
+		self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 
-	if ( ( myClass == "WARLOCK" ) and
-	     ( OrigOpenAllBags == nil ) ) then
-		OrigOpenAllBags = OpenAllBags
-		OpenAllBags = NewOpenAllBags
-		DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, Version))
+		local _, myClass = UnitClass("player")
+
+		if ( ( myClass == "WARLOCK" ) and
+		     ( OrigOpenAllBags == nil ) ) then
+			OrigOpenAllBags = OpenAllBags
+			OpenAllBags = NewOpenAllBags
+			DEFAULT_CHAT_FRAME:AddMessage(string.format(SoulPouch_Constants.SOUL_POUCH_LOADED, Version))
+		end
 	end
 end
+
+-- main
+local frame = CreateFrame("Frame")
+frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+frame:SetScript("OnEvent", EventHandler)
 

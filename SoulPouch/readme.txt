@@ -17,10 +17,8 @@ all.
 
 *** Changelog
 
-Version 13
- * Updated TOC for WoW 3.3.5
-
 Version 12
+ * Updated TOC for WoW 3.3.5
  * The class needs no longer be localized.
  * Stop leaking globals.
  * No longer use an XML file.

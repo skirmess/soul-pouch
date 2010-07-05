@@ -17,6 +17,9 @@ all.
 
 *** Changelog
 
+Version 13
+ * Updated TOC for WoW 3.3.5
+
 Version 12
  * The class needs no longer be localized.
  * Stop leaking globals.

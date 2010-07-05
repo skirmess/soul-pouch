@@ -1,7 +1,7 @@
 
--- Copyright (c) 2009, Sven Kirmess
+-- Copyright (c) 2009-2010, Sven Kirmess
 
-local Version = 12
+local Version = 13
 local OrigOpenAllBags = nil
 
 local function IsSoulPouch(bag)

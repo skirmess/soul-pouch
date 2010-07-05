@@ -1,4 +1,4 @@
-## Interface: 30200
+## Interface: 30300
 ## Title: Soul Pouch
 ## Author: Sven Kirmess 
 ## Notes: Whenever all bags are opend, the soul pouch is kept closed.

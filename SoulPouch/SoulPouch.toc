@@ -1,0 +1,10 @@
+## Interface: 30300
+## Title: Soul Pouch
+## Author: Sven Kirmess 
+## Notes: Whenever all bags are opend, the soul pouch is kept closed.
+## SavedVariables:
+## OptionalDeps:
+## Dependencies:
+## X-Website: http://code.google.com/p/soul-pouch/
+localization.lua
+SoulPouch.lua

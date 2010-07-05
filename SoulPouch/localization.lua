@@ -1,5 +1,5 @@
 
--- Copyright (c) 2009, Sven Kirmess
+-- Copyright (c) 2009-2010, Sven Kirmess
 
 local SoulPouch_localization = { }
 
